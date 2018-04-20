@@ -1,0 +1,8 @@
+/Dist-Zilla-Plugin-ReadmeAddDevInfo-*
+/.build
+/_build*
+/Build
+MYMETA.*
+!META.json
+/.prove
+*.sw*
