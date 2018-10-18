@@ -8,7 +8,7 @@ Dist::Zilla::Plugin::ReadmeAddDevInfo - Dist::Zilla::Plugin::ReadmeAddDevInfo - 
 
 # VERSION
 
-version 0.01
+version 0.02
 
 # SYNOPSIS
 
@@ -30,13 +30,30 @@ the README that will be modified.
 
 The default is `build`.
 
+## before
+
+    [ReadmeAddDevInfo]
+    before = # AUTHOR
+
+Where to put the info in. In this example the info is added before the
+"AUTHOR" section.
+
+## add\_contribution\_file
+
+    [ReadmeAddDevInfo]
+    add_contribution_file = 1
+
+Also add the info as _CONTRIBUTING.md_. The information from this file
+is shown in [MetaCPAN](https://metacpan.org) under the "How to contribute" link.
+E.g. for this dist: [How to contribute](https://metacpan.org/contributing-to/Dist-Zilla-Plugin-ReadmeAddDevInfo).
+
 # SEE ALSO
 
 [Minilla](https://metacpan.org/pod/Minilla), [Dist::Zilla::Plugin::TravisCI::StatusBadge](https://metacpan.org/pod/Dist::Zilla::Plugin::TravisCI::StatusBadge)
 
 
 
-## Development
+# Development
 
 The distribution is contained in a Git repository, so simply clone the
 repository
