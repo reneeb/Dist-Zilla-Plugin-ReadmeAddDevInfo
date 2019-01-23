@@ -47,6 +47,16 @@ Also add the info as _CONTRIBUTING.md_. The information from this file
 is shown in [MetaCPAN](https://metacpan.org) under the "How to contribute" link.
 E.g. for this dist: [How to contribute](https://metacpan.org/contributing-to/Dist-Zilla-Plugin-ReadmeAddDevInfo).
 
+# METHODS
+
+## add\_info
+
+## after\_build
+
+## after\_release
+
+## munge\_files
+
 # SEE ALSO
 
 [Minilla](https://metacpan.org/pod/Minilla), [Dist::Zilla::Plugin::TravisCI::StatusBadge](https://metacpan.org/pod/Dist::Zilla::Plugin::TravisCI::StatusBadge)
@@ -99,7 +109,7 @@ $ dzil test --author --release
 
 # AUTHOR
 
-Renee Baecker &lt;reneeb@cpan.org>
+Renee Baecker <reneeb@cpan.org>
 
 # COPYRIGHT AND LICENSE
 
