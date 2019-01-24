@@ -14,7 +14,7 @@ use Dist::Zilla::File::OnDisk;
 use Dist::Zilla::File::InMemory;
 use Path::Tiny;
 
-our $VERSION = '0.02';
+our $VERSION = '0.03';
 
 # same as Dist::Zilla::Plugin::ReadmeAnyFromPod
 with qw(
