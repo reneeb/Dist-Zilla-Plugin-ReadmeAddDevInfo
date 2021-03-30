@@ -62,11 +62,11 @@ has contribution_file => (
             # for the other phases we look on disk
             my $root = path($self->zilla->root);
 
-            return Dist::Zilla::File::OnDisk->new( 
+            return Dist::Zilla::File::OnDisk->new(
                 name    => "$_",
                 content => $_->slurp_raw,
                 encoding => 'bytes',
-            ) for grep { -f $_ } map { $root->child($_) } @candidates 
+            ) for grep { -f $_ } map { $root->child($_) } @candidates
         }
 
         if ( $self->add_contribution_file ) {
@@ -100,11 +100,11 @@ has readme_file => (
             # for the other phases we look on disk
             my $root = path($self->zilla->root);
 
-            return Dist::Zilla::File::OnDisk->new( 
+            return Dist::Zilla::File::OnDisk->new(
                 name    => "$_",
                 content => $_->slurp_raw,
                 encoding => 'bytes',
-            ) for grep { -f $_ } map { $root->child($_) } @candidates 
+            ) for grep { -f $_ } map { $root->child($_) } @candidates
         }
 
         $self->log_fatal('README file not found') if !$self->{contributing_file_only};
